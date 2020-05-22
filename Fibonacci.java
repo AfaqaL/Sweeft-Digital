@@ -4,7 +4,8 @@ public class Fibonacci {
     }
 
     private static long fibonacciHelper(long n, int first, int second) {
-        if(n <= 1) return second;
+        if(n == 0) return first;
+        if(n == 1) return second;
 
         return fibonacciHelper(n - 1, second, first + second);
     }
